@@ -1,6 +1,6 @@
 # Blazor DataGrid - Bind JSON Object
 
-This example shows how to bind JSON data from a local file to a Syncfusion DataGrid component.
+This example shows how to bind JSON data from a local file to a [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) component.
 
 ## Overview
 
@@ -9,14 +9,14 @@ This project showcases a practical approach to loading and displaying structured
 ## Features
 
 - **JSON Data Binding**: Load and deserialize JSON data from local files
-- **Responsive Grid**: Built with Syncfusion Blazor DataGrid component
+- **Responsive Grid**: Built with Blazor DataGrid component
 - **Pagination**: Display data with configurable page sizes
 - **Server-side Rendering**: Full Blazor Server implementation
 - **Type-safe Data Models**: Strongly typed C# classes for data mapping
 
 ## Prerequisites
 
-- [.NET SDK 7.0](https://dotnet.microsoft.com/download/dotnet/7.0) or later
+- [.NET SDK 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) or later
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
 - [Visual Studio Code](https://code.visualstudio.com/)
 
