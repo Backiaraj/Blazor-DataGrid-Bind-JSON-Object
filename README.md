@@ -1,51 +1,55 @@
-# Blazor DataGrid - Bind JSON Object
-
-This example shows how to bind JSON data from a local file to a [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) component.
+# Blazor DataGrid - Bind JSON Object to Grid
 
 ## Overview
 
-This project showcases a practical approach to loading and displaying structured data in a Blazor Server application. It loads JSON data from a file at runtime and binds it to a responsive data grid with built-in features like pagination, sorting, and filtering.
+This sample demonstrates how to bind JSON data to the Syncfusion Blazor DataGrid and display the records in a tabular format. The application loads data from a JSON source, maps it to a C# model, and uses that collection as the grid data source. This approach is useful when application data originates from JSON files, APIs, configuration sources, or external services that return JSON payloads.
 
-## Features
+## Key Features
 
-- **JSON Data Binding**: Load and deserialize JSON data from local files
-- **Responsive Grid**: Built with Blazor DataGrid component
-- **Pagination**: Display data with configurable page sizes
-- **Server-side Rendering**: Full Blazor Server implementation
-- **Type-safe Data Models**: Strongly typed C# classes for data mapping
+- Uses the Syncfusion Blazor DataGrid (`SfGrid`) to display JSON-backed records.
+- Binds a strongly typed collection generated from JSON data to the grid data source.
+- Demonstrates mapping JSON properties to a C# model defined in `GridData.cs`.
+- Renders model fields through grid column definitions in the page hosting the DataGrid.
+- Loads and processes data stored in `bind-data.json` before assigning it to the grid.
 
 ## Prerequisites
 
-- [.NET SDK 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) or later
-- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
-- [Visual Studio Code](https://code.visualstudio.com/)
+* Visual Studio 2022  or Visual Studio Code
 
-## Getting Started
+## How to Run the Project
 
-### Clone the repository
+**Visual Studio 2022**
 
-```bash
-git clone https://github.com/SyncfusionExamples/Blazor-DataGrid-Bind-JSON-Object.git
-cd Blazor-DataGrid-Bind-JSON-Object
-```
+1. Clone or download this repository.
+2. Open `BindJsonObject.sln` in Visual Studio 2022.
+3. Restore the NuGet packages for the solution.
+4. Build the project to ensure all dependencies are available.
+5. Run the application using Visual Studio.
+6. Navigate to the page that hosts the Syncfusion DataGrid to view records loaded from the JSON source.
 
-### Run with Visual Studio
+**Visual Studio Code**
 
-1. Open the solution file using Visual Studio 2022 or later.
-2. Restore the NuGet packages by rebuilding the solution.
-3. Build the project to ensure there are no compilation errors.
-4. Run the project.
-
-### Run with .NET CLI
+1. Open the repository folder in Visual Studio Code.
+2. Open the integrated terminal.
+3. Navigate to the project directory.
 
 ```bash
-# Restore dependencies
 dotnet restore
-
-# Run the project
 dotnet run
 ```
 
-## References
+## Project Structure
 
-**Documentation**: https://blazor.syncfusion.com/documentation/datagrid/data-binding/data-binding
+- `Pages/` — contains the Razor page that renders the Syncfusion Blazor DataGrid and performs JSON data binding.
+- `GridData.cs` — defines the model used to deserialize and represent the JSON records displayed in the grid.
+- `bind-data.json` — JSON data source consumed by the sample.
+
+## Support and Feedback
+
+- For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
+- To report an issue specific to this sample, open a GitHub issue in this repository.
+- Refer to the Syncfusion Blazor DataGrid documentation: https://help.syncfusion.com/grid-sdk/blazor/data-grid/data-binding/data-binding
+
+## License
+
+This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
