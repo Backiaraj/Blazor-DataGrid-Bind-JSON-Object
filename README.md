@@ -2,9 +2,9 @@
 
 ## Overview
 
-This sample demonstrates how to bind JSON data to the Syncfusion Blazor DataGrid and display the records in a tabular format. The application loads data from a JSON source, maps it to a C# model, and uses that collection as the grid data source. This approach is useful when application data originates from JSON files, APIs, configuration sources, or external services that return JSON payloads.
+This sample demonstrates how to bind JSON data to the Syncfusion [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) and display the records in a tabular format. The application loads data from a JSON source, maps it to a C# model, and uses that collection as the grid data source. This approach is useful when application data originates from JSON files, APIs, configuration sources, or external services that return JSON payloads.
 
-## Key Features
+## Features
 
 - Uses the Syncfusion Blazor DataGrid (`SfGrid`) to display JSON-backed records.
 - Binds a strongly typed collection generated from JSON data to the grid data source.
@@ -14,37 +14,40 @@ This sample demonstrates how to bind JSON data to the Syncfusion Blazor DataGrid
 
 ## Prerequisites
 
-* Visual Studio 2022  or Visual Studio Code
+* [.NET SDK 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) or later
+* [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Code](https://code.visualstudio.com/)
 
-## How to Run the Project
+## How to run the project
 
-**Visual Studio 2022**
+**Visual Studio 2026**:
 
-1. Clone or download this repository.
-2. Open `BindJsonObject.sln` in Visual Studio 2022.
-3. Restore the NuGet packages for the solution.
-4. Build the project to ensure all dependencies are available.
-5. Run the application using Visual Studio.
-6. Navigate to the page that hosts the Syncfusion DataGrid to view records loaded from the JSON source.
+* Checkout this project to a location in your disk.
+* Open the project (`BindJsonObject.csproj`) file.
+* Restore the NuGet packages.
+* Run the project.
 
-**Visual Studio Code**
+**Visual Studio Code**:
 
-1. Open the repository folder in Visual Studio Code.
-2. Open the integrated terminal.
-3. Navigate to the project directory.
+* Checkout this project to a location in your disk.
+* Open the repository folder in Visual Studio Code.
+* Open the integrated terminal.
+* Navigate to the repository root.
 
 ```bash
+cd Blazor-DataGrid-Bind-JSON-Object
 dotnet restore
 dotnet run
 ```
 
-## Project Structure
+Open the URL displayed in the terminal after the application starts.
+
+## Project structure
 
 - `Pages/` — contains the Razor page that renders the Syncfusion Blazor DataGrid and performs JSON data binding.
 - `GridData.cs` — defines the model used to deserialize and represent the JSON records displayed in the grid.
 - `bind-data.json` — JSON data source consumed by the sample.
 
-## Support and Feedback
+## Support and feedback
 
 - For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
 - To report an issue specific to this sample, open a GitHub issue in this repository.
